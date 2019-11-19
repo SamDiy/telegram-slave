@@ -37,7 +37,7 @@ pbr==5.4.3
 peewee==3.11.2
 pendulum==2.0.5
 pexpect==4.2.1
-Pillow==5.1.0
+Pillow==6.2.0
 protobuf==3.9.1
 psutil==5.4.2
 pycairo==1.16.2
