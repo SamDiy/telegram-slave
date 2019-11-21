@@ -27,9 +27,9 @@ class JSONData:
     
     def getDataByKey(self, key):
         document = self._readJsonData()
-        if hasattr(document, key):
+        try:
             return document[key]
-        else:
+        except:
             return ""
 
     def setDataByKey(self, key, value):
@@ -38,5 +38,3 @@ class JSONData:
         self._writeJsonData(data)
 
 JSONDocument = JSONData('data.json')
-
-JSONDocument.getDataByKey("api_key")
